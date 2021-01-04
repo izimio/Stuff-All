@@ -85,7 +85,7 @@ void ducul(char *str){
             if(j != '\n')
                 if(count != f + 1)
                     ft_putchar(j);
-            if(j == '\n' && count != f)
+            if((j == '\n' || j == '.') && count != f)
             {
 
                 str_write(" du cul \n");
