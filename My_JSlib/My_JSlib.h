@@ -25,4 +25,7 @@ void    My_arr_charReverse(char *str);
 int     *My_arr_shift(int tab[], int size);
 void    My_arr_sort(int tab[], int size);
 int     *My_arr_splice(int tab[], int size, int from, int to);
+char    *My_arr_toString(int tab[], int size);
+int     My_arr_atoi(char *str);
+char    *ft_itoa(int nb);
 #endif
