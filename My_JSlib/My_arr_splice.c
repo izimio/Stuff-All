@@ -10,11 +10,12 @@ int *My_arr_splice(int tab[], int size, int from, int to){
     arr = (int *)malloc(sizeof(int) * (size - to));
     while (i < size)
     {
-        if(i > from && i <= to)
-            i++;
+        if(i == from){
+            i += to - 1;
+        }
         else{
             arr[j] = tab[i];
-            j++;
+            j++;   
         }
         i++;
     }
