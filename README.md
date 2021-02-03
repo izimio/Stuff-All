@@ -5,3 +5,5 @@ Mainly and certainly only coded with the C language.
 
 First, Here is a program that just write whatever you want after every '\n' inside a file. 
 Inspired by the "Bot du Cul" which is bot that tweeted every french word by adding "du cul" at the end of it. 
+
+Secondly, i had the idea to recreate some of the premade function in JS

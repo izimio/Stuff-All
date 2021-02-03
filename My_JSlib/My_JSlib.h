@@ -11,4 +11,9 @@ int     *my_arr_concat(int tab1[], int tab2[], int size1, int size2);
 void    My_arr_fill(int tab[], int size ,int index, int start);
 char    *My_arr_charfilter(char *str, int (*func)(char));
 int     My_arr_find(int tab[], int size, int (*func)(int));
+char    My_arr_charFind(char *str, int (*func)(char));
+int     My_arr_indexOf(int tab[], int size, int (*func)(int));
+char    My_arr_charIndexOf(char *str, int (*func)(char));
+int     My_arr_includes(int tab[],int size, int value);
+char    **ft_split(char *str, char *charset);
 #endif
