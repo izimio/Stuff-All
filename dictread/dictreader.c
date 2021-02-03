@@ -88,7 +88,7 @@ void ducul(char *str){
             if((j == '\n' || j == '.') && count != f)
             {
 
-                str_write(" du cul \n");
+                str_write(" oreo le chaton trop mignon \n");
                 count++;
                 j = '0';
             }
