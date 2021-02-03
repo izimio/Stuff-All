@@ -15,5 +15,14 @@ char    My_arr_charFind(char *str, int (*func)(char));
 int     My_arr_indexOf(int tab[], int size, int (*func)(int));
 char    My_arr_charIndexOf(char *str, int (*func)(char));
 int     My_arr_includes(int tab[],int size, int value);
-char    **ft_split(char *str, char *charset);
+char    **My_arr_split(char *str, char *charset);
+int     My_arr_lastIndexOf(int tab[],int size, int value);
+int     *My_arr_pop(int tab[], int size, int value);
+int     *My_arr_push(int tab[], int size, int value);
+int     my_arr_reduce(int tab[], int size, char calcul);
+void    My_arr_reverse(int tab[], int size);
+void    My_arr_charReverse(char *str);
+int     *My_arr_shift(int tab[], int size);
+void    My_arr_sort(int tab[], int size);
+int     *My_arr_splice(int tab[], int size, int from, int to);
 #endif
