@@ -1,6 +1,6 @@
 # include "My_JSlib.h"
 
-int *My_arr_pop(int tab[], int size, int value){
+int *My_arr_push(int tab[], int size, int value){
     int *arr;
     int i;
 

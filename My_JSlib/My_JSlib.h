@@ -28,4 +28,8 @@ int     *My_arr_splice(int tab[], int size, int from, int to);
 char    *My_arr_toString(int tab[], int size);
 int     My_arr_atoi(char *str);
 char    *ft_itoa(int nb);
+int     *My_arr_unshift(int tab[],int size,int a, int b);
+int     *My_range(int start, int end);
+void    My_Union(char *s1, char *s2);
+void    My_inter(char *s1, char *s2);
 #endif

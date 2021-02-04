@@ -1,5 +1,4 @@
-#include <stdlib.h>
-#include <stdio.h>
+# include "My_JSlib.h"
 
 int count(int nb)
 {
