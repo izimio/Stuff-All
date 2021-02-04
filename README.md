@@ -6,4 +6,7 @@ Mainly and certainly only coded with the C language.
 First, Here is a program that just write whatever you want after every '\n' inside a file. 
 Inspired by the "Bot du Cul" which is bot that tweeted every french word by adding "du cul" at the end of it. 
 
-Secondly, i had the idea to recreate some of the premade function in JS
+Secondly, i had the idea to recreate some of the included function in JS
+I also add some of mine inside this huge lib that i'm creating. 99% of those functions are low IQ but as it was written above they were  
+"pleasante to make"
+==
