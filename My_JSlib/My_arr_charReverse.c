@@ -1,6 +1,7 @@
-# include "My_JSlib.h"
+#include "My_JSlib.h"
 
-void   My_arr_charReverse(char *str){
+void My_arr_charReverse(char *str)
+{
     int length;
     int i;
     char cmp;

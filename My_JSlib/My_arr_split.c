@@ -1,18 +1,20 @@
-# include "My_JSlib.h"
+#include "My_JSlib.h"
 
-int in_charset(char c, char *str){
+int in_charset(char c, char *str)
+{
 
     int i;
     i = -1;
     while (str[++i])
     {
-        if(c == str[i])
-            return(1);
+        if (c == str[i])
+            return (1);
     }
     return (0);
 }
 
-int wcount(char *str, char *charset){
+int wcount(char *str, char *charset)
+{
 
     int i;
     int count;
@@ -21,24 +23,24 @@ int wcount(char *str, char *charset){
 
     while (str[i])
     {
-        while (str[i] && in_charset(str[i],charset))
+        while (str[i] && in_charset(str[i], charset))
         {
             i++;
         }
-        if(str[i] && !in_charset(str[i], charset)){
+        if (str[i] && !in_charset(str[i], charset))
+        {
             count++;
             while (str[i] && !in_charset(str[i], charset))
             {
                 i++;
             }
-            
         }
     }
-    return(count);
+    return (count);
 }
 
-
-char *wmalloc(char *str, char *charset){
+char *wmalloc(char *str, char *charset)
+{
 
     int i;
     char *toa;
@@ -49,34 +51,35 @@ char *wmalloc(char *str, char *charset){
         i++;
     }
     i = 0;
-    toa = (char*)malloc(sizeof(char) * i +1);
+    toa = (char *)malloc(sizeof(char) * i + 1);
     while (str[i] && !in_charset(str[i], charset))
     {
         toa[i] = str[i];
         i++;
     }
     toa[i] = '\0';
-    return(toa);
+    return (toa);
 }
 
+char **My_arr_split(char *str, char *charset)
+{
 
-char **My_arr_split(char *str, char *charset){
+    int i;
+    int j;
 
-int i;
-int j;
-
-i = 0;
-j = 0;
-char **arr;
-arr = (char **)malloc(sizeof(char *) * wcount(str, charset) + 1 );
+    i = 0;
+    j = 0;
+    char **arr;
+    arr = (char **)malloc(sizeof(char *) * wcount(str, charset) + 1);
 
     while (str[i])
     {
-        while (str[i] && in_charset(str[i],charset))
+        while (str[i] && in_charset(str[i], charset))
         {
             i++;
         }
-        if(str[i] && !in_charset(str[i], charset)){
+        if (str[i] && !in_charset(str[i], charset))
+        {
 
             arr[j] = wmalloc(&str[i], charset);
             j++;
@@ -85,9 +88,8 @@ arr = (char **)malloc(sizeof(char *) * wcount(str, charset) + 1 );
             {
                 i++;
             }
-            
         }
     }
     arr[j] = 0;
-    return(arr);
+    return (arr);
 }

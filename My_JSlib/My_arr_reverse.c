@@ -1,6 +1,7 @@
-# include "My_JSlib.h"
+#include "My_JSlib.h"
 
-void My_arr_reverse(int tab[], int size){
+void My_arr_reverse(int tab[], int size)
+{
     int i;
     int cmp;
     i = -1;

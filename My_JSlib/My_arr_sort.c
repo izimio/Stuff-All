@@ -1,13 +1,14 @@
-# include "My_JSlib.h"
+#include "My_JSlib.h"
 
-void My_arr_sort(int tab[], int size){
+void My_arr_sort(int tab[], int size)
+{
     int i;
     int cmp;
-    i  = 0;
+    i = 0;
     size--;
     while (i < size)
     {
-        if(tab[i] > tab[i + 1])
+        if (tab[i] > tab[i + 1])
         {
             cmp = tab[i];
             tab[i] = tab[i + 1];

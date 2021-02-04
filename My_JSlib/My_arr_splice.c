@@ -1,6 +1,7 @@
-# include "My_JSlib.h"
+#include "My_JSlib.h"
 
-int *My_arr_splice(int tab[], int size, int from, int to){
+int *My_arr_splice(int tab[], int size, int from, int to)
+{
     int i;
     int j;
     int *arr;
@@ -10,12 +11,14 @@ int *My_arr_splice(int tab[], int size, int from, int to){
     arr = (int *)malloc(sizeof(int) * (size - to));
     while (i < size)
     {
-        if(i == from){
+        if (i == from)
+        {
             i += to - 1;
         }
-        else{
+        else
+        {
             arr[j] = tab[i];
-            j++;   
+            j++;
         }
         i++;
     }

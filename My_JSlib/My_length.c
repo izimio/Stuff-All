@@ -1,10 +1,11 @@
-# include "My_JSlib.h"
+#include "My_JSlib.h"
 
-int my_length(char *str){
+int my_length(char *str)
+{
     int i;
 
     i = 0;
     while (str[i])
         i++;
-    return(i);
+    return (i);
 }

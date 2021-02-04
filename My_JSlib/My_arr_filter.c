@@ -1,10 +1,12 @@
-# include "My_JSlib.h"
+#include "My_JSlib.h"
 
-int isPositiv(int a){
+int isPositiv(int a)
+{
     return ((a >= 0) ? 1 : 0);
 }
 
-int *My_arr_filter(int tab[], int size, int (*func)(int)){
+int *My_arr_filter(int tab[], int size, int (*func)(int))
+{
     int i;
     int count;
     int *arr;
@@ -14,12 +16,12 @@ int *My_arr_filter(int tab[], int size, int (*func)(int)){
     count = 0;
     i = -1;
     while (++i < size)
-        if((*func)(tab[i]) == 1)
+        if ((*func)(tab[i]) == 1)
             count++;
-    arr = (int*)malloc(sizeof(int) * count);
+    arr = (int *)malloc(sizeof(int) * count);
     i = -1;
     while (++i < size)
-        if((*func)(tab[i]) == 1)
+        if ((*func)(tab[i]) == 1)
             arr[++j] = tab[i];
-    return(arr);
+    return (arr);
 }

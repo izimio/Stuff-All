@@ -1,6 +1,7 @@
-# include "My_JSlib.h"
+#include "My_JSlib.h"
 
-int *My_arr_push(int tab[], int size, int value){
+int *My_arr_push(int tab[], int size, int value)
+{
     int *arr;
     int i;
 
@@ -10,5 +11,5 @@ int *My_arr_push(int tab[], int size, int value){
     while (++i != size)
         arr[i] = tab[i];
     arr[i] = value;
-    return(arr);
+    return (arr);
 }

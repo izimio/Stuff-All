@@ -1,6 +1,7 @@
-# include "My_JSlib.h"
+#include "My_JSlib.h"
 
-int *My_arr_pop(int tab[], int size){
+int *My_arr_pop(int tab[], int size)
+{
     int *arr;
     int i;
 
@@ -9,5 +10,5 @@ int *My_arr_pop(int tab[], int size){
 
     while (++i != size - 1)
         arr[i] = tab[i];
-    return(arr);
+    return (arr);
 }

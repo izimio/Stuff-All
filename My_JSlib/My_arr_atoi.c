@@ -1,6 +1,7 @@
-# include "My_JSlib.h"
+#include "My_JSlib.h"
 
-int My_arr_atoi(char *str){
+int My_arr_atoi(char *str)
+{
     int i;
     int res;
     int count;
@@ -11,16 +12,17 @@ int My_arr_atoi(char *str){
 
     while ((str[i] >= 9 && str[i] <= 13) || str[i] == ' ')
         i++;
-    if(str[i] == '+' || str[i] == '-'){
-        if(str[i] == '-')
+    if (str[i] == '+' || str[i] == '-')
+    {
+        if (str[i] == '-')
             count = -1;
         i++;
     }
     while (str[i] >= '0' && str[i] <= '9')
     {
-        res += str[i]  - '0';
+        res += str[i] - '0';
         res *= 10;
         i++;
     }
-    return((res * count) / 10);
+    return ((res * count) / 10);
 }

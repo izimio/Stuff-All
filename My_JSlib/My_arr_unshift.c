@@ -1,7 +1,7 @@
-# include "My_JSlib.h"
+#include "My_JSlib.h"
 
-
-int *My_arr_unshift(int tab[],int size,int a, int b){
+int *My_arr_unshift(int tab[], int size, int a, int b)
+{
     int i;
     int *arr;
 
@@ -13,5 +13,5 @@ int *My_arr_unshift(int tab[],int size,int a, int b){
     {
         arr[i] = tab[i - 2];
     }
-    return(arr);
+    return (arr);
 }

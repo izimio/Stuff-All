@@ -1,4 +1,4 @@
-# include "My_JSlib.h"
+#include "My_JSlib.h"
 
 int count(int nb)
 {
@@ -9,7 +9,8 @@ int count(int nb)
 
     nbr = nb;
 
-    if(nbr <= 0){
+    if (nbr <= 0)
+    {
         i++;
         nbr = -nbr;
     }
@@ -21,8 +22,8 @@ int count(int nb)
     return (i);
 }
 
-
-char *ft_itoa(int nb){
+char *ft_itoa(int nb)
+{
     long nbr;
     int i;
     char *toa;
@@ -31,28 +32,31 @@ char *ft_itoa(int nb){
     nbr = nb;
     toa = (char *)malloc(sizeof(char) * count(nb) + 1);
     toa[i] = '\0';
-    if( nb == 0){
+    if (nb == 0)
+    {
         toa[0] = '0';
-        return(toa);
+        return (toa);
     }
-        if(nbr < 0){
-            toa[0] = '-';
-            nbr = -nbr;
-            while (nbr > 0)
-            { 
-                i--;    
-                toa[i] = nbr % 10 + '0';
-                nbr = nbr / 10;
-            }
+    if (nbr < 0)
+    {
+        toa[0] = '-';
+        nbr = -nbr;
+        while (nbr > 0)
+        {
+            i--;
+            toa[i] = nbr % 10 + '0';
+            nbr = nbr / 10;
         }
-        if(nbr > 0){
-            while (nbr > 0)
-            { 
-                i--;    
-                toa[i] = nbr % 10 + '0';
-                nbr = nbr / 10;
-            }
+    }
+    if (nbr > 0)
+    {
+        while (nbr > 0)
+        {
+            i--;
+            toa[i] = nbr % 10 + '0';
+            nbr = nbr / 10;
         }
-    
-    return(toa);
+    }
+
+    return (toa);
 }
