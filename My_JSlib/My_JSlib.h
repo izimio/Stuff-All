@@ -32,4 +32,7 @@ int     *My_arr_unshift(int tab[],int size,int a, int b);
 int     *My_range(int start, int end);
 void    My_Union(char *s1, char *s2);
 void    My_inter(char *s1, char *s2);
+void    My_putnbr(int nb);
+int     My_arr_isOnlynums(char *str);
+void    putnbr_base(int nb, char *base);
 #endif
