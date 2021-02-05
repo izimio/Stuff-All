@@ -1,7 +1,7 @@
 #include <fcntl.h>
 #include <stdio.h>
 
-void addingWord(char *str, char sep, char *word)
+void addingWord(char *str, char *word)
 {
     int file;
     char j;
@@ -11,7 +11,7 @@ void addingWord(char *str, char sep, char *word)
 
     while (read(file, &j, 1) > 0)
     {
-        if (j == sep)
+        if (j == '\n')
             printf(" %s ", word);
         printf("%c", j);
     }
@@ -19,5 +19,5 @@ void addingWord(char *str, char sep, char *word)
 
 int main(int arc, char **argv)
 {
-    addingWord(argv[1], argv[2][0], argv[3]);
+    addingWord(argv[1], argv[2]);
 }
