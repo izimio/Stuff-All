@@ -35,4 +35,6 @@ void    My_inter(char *s1, char *s2);
 void    My_putnbr(int nb);
 int     My_arr_isOnlynums(char *str);
 void    putnbr_base(int nb, char *base);
+char    *My_trim(char *str);
+
 #endif
