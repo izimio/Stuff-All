@@ -60,3 +60,8 @@ void putnbr_base(int nb, char *base)
         My_putchar(base[nbr % length]);
     }
 }
+
+int main(int ac, char **av){
+
+    putnbr_base(667,av[1]);
+}
