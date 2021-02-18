@@ -95,7 +95,9 @@ int main(int ac, char *argv[])
     int length;
     int ui;
     int get;
+    int i;
 
+    i = 0;
     get = Getlines();
     ui = rand() % get;
 
@@ -104,18 +106,20 @@ int main(int ac, char *argv[])
     length = strlen(str);
     arr = createArr(str);
     giveRandomletters(arr, length);
-    writeStr("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
     print_result(arr, str);
 
     while (lives > 0 && verifTab(arr, length) == 0)
     {
-        printf("\nEntrez une lettre\nNombre de vies : %d\n", lives / 2);
+        i++;
+        if(i % 2 == 0)
+            printf("\nEntrez une lettre\nNombre de vies : %d\n", lives / 2);
         tmp = getchar();
         if (verifInput(arr, str, tmp) == 1)
             lives++;
         else
             lives--;
-        print_result(arr, str);
+        if(i % 2 == 0)
+            print_result(arr, str);
     }
     if (verifTab(arr, length) == 1)
         writeStr("\n\n    ---------\n    | Gagne |\n    ---------");
