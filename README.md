@@ -15,3 +15,18 @@ I also add some of mine inside this huge lib that i'm creating. 99% of those fun
 "pleasante to make"
 ==
 ![](https://zupimages.net/up/21/05/hug9.png)
+
+----------------------------------------------------------------------------------------------
+
+Thirdly the brand new program i made is a hang man ! It has all the feature possible ! 
+==
+
+Just choose the word you want your friend to find as the first argv !
+----------------------------------------------------------------------------------------------              
+![](https://zupimages.net/up/21/07/z084.png)
+
+![](https://zupimages.net/up/21/07/frya.png)
+
+----------------------------------------------------------------------------------------------
+
+![](https://zupimages.net/up/21/07/x2xm.png)
