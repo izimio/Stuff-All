@@ -1,6 +1,11 @@
 # include <stdlib.h>
 # include <stdio.h>
 
+char *randomizer(int a);
+char *concateneat(char *str1,char *str2);
+char *CreateRandomWord();
+int strlen(char *str);
+
 void my_putchar(char c)
 {
     printf("%c",c);
@@ -74,16 +79,14 @@ int *createArr(char *str)
 
 int main(int ac, char *argv[])
 {
-    if(ac == 2)
-    {
-        char *str;
+       char *str;
         int lives;
         int *arr;
         char tmp;
         int length;
 
         lives = 10;
-        str = argv[1];
+        str = CreateRandomWord();
         length = strlen(str);
         arr = createArr(str); 
         writeStr("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
@@ -105,10 +108,6 @@ int main(int ac, char *argv[])
         {
             writeStr("\n\n");
             writeStr(str);
-            writeStr("    ---------\n    | Perdu |\n    ---------");
+            writeStr("\n    ---------\n    | Perdu |\n    ---------");
         }
-            
-    }
-    else
-        writeStr("Bonsoir non.");
 }

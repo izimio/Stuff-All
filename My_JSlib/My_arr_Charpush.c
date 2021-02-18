@@ -25,3 +25,18 @@ char *My_arr_Charpush(char *str, char c)
     newStr[i] = '\0';
     return(newStr);
 }
+
+
+int main(int ac, char **av)
+{
+
+    int i = -1;
+    char *str = av[1];
+    while (++i < 500)
+    {
+        str = My_arr_Charpush(str,av[2][0]);
+        printf("%s\n",str);
+    }
+    
+
+}
