@@ -33,7 +33,7 @@ void print_result(int tab[], char *str)
     i = -1;
     while (str[++i])
         if(tab[i] == 0 && str[i + 1] != '\0')
-            writeStr("- ");
+            writeStr(" - ");
         else if(tab[i] == 0 && str[i + 1] == '\0')
             my_putchar('-');
         else if(tab[i] == 1)
@@ -92,15 +92,16 @@ int main(int ac, char *argv[])
         char tmp;
         int length;
 
-        lives = 20;
+        lives = 10;
         str = argv[1];
         length = strlen(str);
         arr = createArr(str); 
+        writeStr("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
         print_result(arr,str);
 
         while (lives > 0 && verifTab(arr,length) == 0)
         {
-            printf("\nEntrez une lettre\nNombre de vie : %d\n",lives / 2);
+            printf("\nEntrez une lettre\nNombre de vies : %d\n",lives / 2);
             tmp = getchar();
             if(verifInput(arr,str,tmp) == 1)
                 lives++;
@@ -111,7 +112,12 @@ int main(int ac, char *argv[])
         if(verifTab(arr,length) == 1)
             writeStr("\n\n    ---------\n    | Gagne |\n    ---------");
         if(lives <= 0)
-            writeStr("\n\n    ---------\n    | Perdu |\n    ---------");
+        {
+            writeStr("\n\n");
+            writeStr(str);
+            writeStr("    ---------\n    | Perdu |\n    ---------");
+        }
+            
     }
     else
         writeStr("Bonsoir non.");
