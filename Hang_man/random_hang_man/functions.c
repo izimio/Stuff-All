@@ -24,8 +24,7 @@ char *randomizer(int a){
     value = rand() % 999999;
     value2 = rand() % 555550061;
     int ttt = rand() % 26;
-
-    printf("%d\n",ttt);
+    
     value2 /= a;
     cpy = value2;
 
