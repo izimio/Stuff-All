@@ -101,7 +101,7 @@ int main(int ac, char *argv[])
     get = Getlines();
     ui = rand() % get;
     lives = 10;
-    str = giveWord(ui / 2);
+    str = giveWord((ui / 2) - 1);
     length = strlen(str);
     arr = createArr(str);
     giveRandomletters(arr, length);
