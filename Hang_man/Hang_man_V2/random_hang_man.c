@@ -93,16 +93,15 @@ int main(int ac, char *argv[])
     int *arr;
     char tmp;
     int length;
-    int ui;
+    long ui;
     int get;
     int i;
 
     i = 0;
     get = Getlines();
     ui = rand() % get;
-
     lives = 10;
-    str = giveWord(ui);
+    str = giveWord(ui / 2);
     length = strlen(str);
     arr = createArr(str);
     giveRandomletters(arr, length);
@@ -122,7 +121,11 @@ int main(int ac, char *argv[])
             print_result(arr, str);
     }
     if (verifTab(arr, length) == 1)
+    {
+        writeStr("\n\n");
+        writeStr(str);
         writeStr("\n\n    ---------\n    | Gagne |\n    ---------");
+    }
     if (lives <= 0)
     {
         writeStr("\n\n");

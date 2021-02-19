@@ -30,7 +30,7 @@ int Getlines()
     return(i);
 }
 
-char *giveWord(int a)
+char *giveWord(long a)
 {
     int file;
     int d;
