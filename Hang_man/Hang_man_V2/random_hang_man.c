@@ -100,8 +100,13 @@ int main(int ac, char *argv[])
     i = 0;
     get = Getlines();
     ui = rand() % get;
+    if(ui % 2 == 0)
+    {
+        if(ui += 784 != get)
+            ui += 784;
+    }
     lives = 10;
-    str = giveWord((ui / 2) - 1);
+    str = giveWord(ui / 2);
     length = strlen(str);
     arr = createArr(str);
     giveRandomletters(arr, length);
