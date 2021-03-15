@@ -22,6 +22,10 @@ Thirdly the brand new program i made is a hang man ! It has all the feature poss
 ==
 
 Just choose the word you want your friend to find as the first argv !
+----------------------------------------------------------------------------------------------  
+or you can choose a playstyle where the program will generate a random word
+----------------------------------------------------------------------------------------------  
+and you can even play with a dict / just select the dictionnayr in the argv and it will select a random word inside of it
 ----------------------------------------------------------------------------------------------              
 ![](https://zupimages.net/up/21/07/z084.png)
 
