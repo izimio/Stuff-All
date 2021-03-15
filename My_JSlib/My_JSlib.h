@@ -37,5 +37,5 @@ int     My_arr_isOnlynums(char *str);
 void    putnbr_base(int nb, char *base);
 char    *My_trim(char *str);
 char    *My_arr_Charpush(char *str, char c);
-
+void    initialeReader(char *str);
 #endif
