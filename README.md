@@ -34,3 +34,14 @@ and you can even play with a dict / just select the dictionnayr in the argv and 
 ----------------------------------------------------------------------------------------------
 
 ![](https://zupimages.net/up/21/07/x2xm.png)
+
+
+----------------------------------------------------------------------------------------------
+
+Just Hover the Point 
+===
+It's a mini game on a webpage (really mini like 2minute to code)
+
+the rules à simple, Juste Hover the red point....
+
+I mean, that's it
