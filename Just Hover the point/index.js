@@ -16,6 +16,5 @@ cercle.addEventListener("mouseover", function(event) {
 
 point.addEventListener("mouseover", function(event) {
     event.stopPropagation()
-    alert("a")
     document.location.href="gg.html";
 })
