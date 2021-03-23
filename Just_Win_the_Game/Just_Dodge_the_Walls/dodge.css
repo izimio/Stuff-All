@@ -18,11 +18,19 @@ p{
     margin-top: 5em;
 }
 
+img{
+    width: 90%;
+    border-radius: 5em;
+}
 /* FIRST */
 .rect1{
     width: 50%;
     height: 50%;
     background-color: purple;
+}
+
+.hide{
+    display: none;
 }
 
 .rect2{
@@ -119,9 +127,11 @@ p{
 
 .rect13{
     position: absolute;
+    position: relative;
     background-color: goldenrod;
     width: 50px;
     height: 50px;
+    margin-top: -0.2em;
     border-radius: 50%;
 }
 
@@ -135,18 +145,30 @@ p{
 }
 .rect15{
     position: absolute;
+    position: relative;
     background-color: purple;
     width: 300px;
     height: 100px;
     left: 50%;
 }
 
-.danger{
-    width: 5px;
-    height: 5px;
+.danger2, .danger1, .danger3{
+    transition: 1000ms;
+    position: absolute;
+    width: 20px;
+    height: 20px;
     background-color: purple;
+    border-radius: 50%;
 }
 
+.dangerC{
+    transition: 1000ms;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: purple;
+    border-radius: 50%;
+}
 
 .airDeJeu{
     overflow: hidden;
