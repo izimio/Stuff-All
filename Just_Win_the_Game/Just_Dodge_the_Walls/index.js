@@ -146,7 +146,6 @@ but1.addEventListener("click", (e) => {
 
 but2.addEventListener("click", (e) => {
     hide2.classList.remove("hide");
-    alert("progression sauvegardé");
     localStorage.setItem("hide3", JSON.stringify("1"));
 
 })
