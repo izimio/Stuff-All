@@ -147,7 +147,7 @@ img{
     position: absolute;
     position: relative;
     background-color: purple;
-    width: 300px;
+    width: 50%;
     height: 100px;
     left: 50%;
 }

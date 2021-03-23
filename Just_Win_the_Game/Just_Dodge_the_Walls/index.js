@@ -26,6 +26,7 @@ let but2 = document.getElementById("but2");
 let but3 = document.getElementById("but3");
 let hide1 = document.getElementById("hide1");
 let hide2 = document.getElementById("hide2");
+let hide3 = document.getElementById("all12");
 //BUTTON
 
 //DANGER 
@@ -47,6 +48,13 @@ function entierAleatoire(min, max) {
 // FUNCTIONS
 
 // LOAD
+let bin = localStorage.getItem("hide3");
+bin = JSON.parse(bin);
+if(bin == 1)
+{
+    hide3.classList.add("hide");
+    hide2.classList.remove("hide");
+}
 setInterval(function () {
     dTop = entierAleatoire(1, 99);
     dLeft = entierAleatoire(1, 99);
@@ -103,8 +111,8 @@ rect13.addEventListener("click", (e) => {
                             t++;
                             console.log(down)
                             if (down <= 400)
-                                rect15.setAttribute("style", `top: 60%; left: 50%; background: goldenrod`);
-                            if (down <= 0) {
+                                rect15.setAttribute("style", `top: 60%; left: 30%; background: goldenrod`);
+                            if (down <= -1000) {
                                 clearInterval(h);
                                 down = 450;
                                 t = 800;
@@ -138,6 +146,9 @@ but1.addEventListener("click", (e) => {
 
 but2.addEventListener("click", (e) => {
     hide2.classList.remove("hide");
+    alert("progression sauvegardé");
+    localStorage.setItem("hide3", JSON.stringify("1"));
+
 })
 
 but3.addEventListener("click", (e) => {
