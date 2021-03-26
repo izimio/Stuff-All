@@ -38,4 +38,5 @@ void    putnbr_base(int nb, char *base);
 char    *My_trim(char *str);
 char    *My_arr_Charpush(char *str, char c);
 void    initialeReader(char *str);
+int     my_fibonnaci(int n);
 #endif
