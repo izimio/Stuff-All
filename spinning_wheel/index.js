@@ -8,7 +8,7 @@ function entierAleatoire(min, max) {
 button.addEventListener("click", (e) => {
 
     let deg = entierAleatoire(3600000, 3000999999);
-    let time = deg / 360 - 40;
+    let time = 3;
     wheel.setAttribute("style", `    transition: ${time}s;
     transform: rotate(${deg}deg);`);
 
