@@ -1,0 +1,49 @@
+html{
+    text-align: center;
+    border: 5px solid red;
+}
+
+h1{
+    color: red;
+}
+
+body{
+    height: 900px;
+    border: 2px solid black;
+    transition: 500ms;
+    width: 100%;
+}
+
+p{
+    padding-bottom: 50em;
+}
+.huhu{
+    transition: 500ms;
+    background-color: pink;
+    width: 300px;
+    height: 100px;
+    border-radius: 15px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.haha{
+    transition: 500ms;
+    background-color: red;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    border-radius: 15px;
+}
+
+
+.tata{
+    background-color: red;
+    width: 0%;
+}
