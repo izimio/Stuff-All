@@ -18,9 +18,11 @@ button.addEventListener("click", (e) => {
         input.setAttribute("style", `display: inline`);
         console.log(time)
         input.addEventListener("change", (e) =>{
+            console.log(time)
             if(input.value == time )
             {   
                 alert("Bravo tu as trouvé le bon nombre de tour ")
+                                document.location.href = "https://pornhub.com";
             }
             else{
                 alert("PERDU")
