@@ -21,7 +21,6 @@ button.addEventListener("click", (e) => {
             if(input.value == time )
             {   
                 alert("Bravo tu as trouvé le bon nombre de tour ")
-		document.location.href("https://pornhub.com");
             }
             else{
                 alert("PERDU")
