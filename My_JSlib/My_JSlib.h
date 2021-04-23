@@ -39,4 +39,5 @@ char    *My_trim(char *str);
 char    *My_arr_Charpush(char *str, char c);
 void    initialeReader(char *str);
 int     my_fibonnaci(int n);
+int     **sort_aglo(int *arr, int length);
 #endif
