@@ -23,7 +23,6 @@ static int *create_random_arr()
     int r;
 
     srand(time(NULL));
-
     for (size_t d = 0; d < 10; d++)
     {
         r = rand() % 200;
@@ -46,7 +45,6 @@ int **sort_aglo(int *arr, int length)
     lneg = 0;
     i = -1;
     res = (int **)malloc(sizeof(int *) * 2);
-
     while (++i < length)
     {
         if (arr[i] >= 0)
@@ -54,7 +52,6 @@ int **sort_aglo(int *arr, int length)
         else if(arr[i] < 0)
             neg = push(neg, lneg++, arr[i]);
     }
-
     res[0] = neg;
     res[1] = pos;
     return (res);
